@@ -1,0 +1,121 @@
+/* CSS for Telegram Landing Page with Cricket Theme and New Design */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00ff3c;
+    --secondary-color: #b81717;
+    --background-color: #000000;
+    --highlight-color: #fff700;
+    --text-color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://tse2.mm.bing.net/th/id/OIP.0fynK8NsYxCY6aahWS6cPwHaEo?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--highlight-color);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.button1 {
+    cursor: pointer;
+    padding: 12px 24px;
+    /* background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); */
+    color: var(--text-color);
+    font-size: 1.2rem;
+      border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: pulse 1.5s ease infinite;
+}
+.logo{
+
+    /* animation: pulse 1.5s ease infinite; */
+}
+
+.button1:hover {
+    box-shadow: 0 0 15px var(--highlight-color);
+}
+
+.button1:active {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(.9);
+    }
+    50% {
+        transform: scale(1);
+        box-shadow: 0 0 50px 5px white;
+    }
+}
+
+.footer-box {
+    width: 100%;
+    background: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .button1 {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
+@media (min-width: 801px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .button1 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 180px;
+    }
+}
